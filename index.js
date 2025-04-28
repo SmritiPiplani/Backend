@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
-import Auth from "./routes/Auth.js"
+import Auth from "./Auth.js"
 import { transporter } from './middlewares/emailConfig.js';
 
 
