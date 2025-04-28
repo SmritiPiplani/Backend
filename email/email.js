@@ -15,7 +15,7 @@ const sendMail = async (req, res) => {
     const info = await transporter.sendMail({
       from: '"Smriti👻" <smriti@ethereal.email>',
       to: "smritipiplani@gmail.com",
-      subject: "Hello Smriti ✔",
+      subject: "Hello Smriti ",
       text: "Hello Smriti \n How are you",
       html: "<b>Hello Smriti<br>How are you</b>"
     });
@@ -24,7 +24,7 @@ const sendMail = async (req, res) => {
     res.status(200).json({
       message: "Mail sent successfully!",
       messageId: info.messageId,
-      previewURL: nodemailer.getTestMessageUrl(info) // handy preview
+      previewURL: nodemailer.getTestMessageUrl(info) 
     });
 
   } catch (error) {
