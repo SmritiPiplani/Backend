@@ -1,5 +1,5 @@
 import express from 'express';
-import { sendOtpEmail } from '../middlewares/em.js'; // Assuming this file is emailConfig.js
+import { sendOtpEmail } from './em.js'; // Assuming this file is emailConfig.js
 import dotenv from 'dotenv';
 
 dotenv.config();
